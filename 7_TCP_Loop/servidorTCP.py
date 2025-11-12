@@ -22,8 +22,6 @@ while 1:
 
   while True:
     sentence = connectionSocket.recv(1024) # recebe dados do cliente
-    if not sentence:
-      break
     sentence = sentence.decode('utf-8')
 
     # verifica se o cliente enviou "sair"
